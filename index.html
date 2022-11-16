@@ -85,11 +85,25 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
                     Prénom : <span property="foaf:givenName">Dupont</span>
                   </p>
                   <p class="card-text">
-                    Age : <span property="foaf:age">25</span>
+                    Age : <span property="foaf:age">
+                      <!--Script to convert birth date to age-->
+                      <script>
+                        var birthDate = new Date("1997-03-24");
+                        var today = new Date();
+                        var age = today.getFullYear() - birthDate.getFullYear();
+                        var m = today.getMonth() - birthDate.getMonth();
+                        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                          age--;
+                        }
+                        document.write(age);
+                      </script>
+                    </span>
                   </p>
                   <p class="card-text">
                     Adresse :
                     <span property="foaf:address">Rue de la Paix</span>
+                    <span property="foaf:addressNumber">4</span>
+                    <span property="foaf:addressNPA">1006</span>
                   </p>
                   <h6 class="card-subtitle mb-2 text-muted">
                     Parcours professionnel
@@ -141,11 +155,24 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
                     Prénom : <span property="foaf:givenName">Dupont</span>
                   </p>
                   <p class="card-text">
-                    Age : <span property="foaf:age">25</span>
+                    Age : 
+                    <!--Script to convert birth date to age-->
+                    <script>
+                      var birthDate = new Date("1996-10-08");
+                      var today = new Date();
+                      var age = today.getFullYear() - birthDate.getFullYear();
+                      var m = today.getMonth() - birthDate.getMonth();
+                      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                        age--;
+                      }
+                      document.write(age);
+                    </script>
                   </p>
                   <p class="card-text">
                     Adresse :
                     <span property="foaf:address">Rue de la Paix</span>
+                    <span property="foaf:addressNumber">4</span>
+                    <span property="foaf:addressNPA">1006</span>
                   </p>
                   <h6 class="card-subtitle mb-2 text-muted">
                     Parcours professionnel
