@@ -15,6 +15,8 @@
 
     <equipe>
         <employe>
+            <posteOccupe>Informaticien</posteOccupe>
+
             <donneesPersonnelles>
                 <nom>Dupont</nom>
                 <prenom>Jean</prenom>
@@ -58,6 +60,8 @@
         </employe>
 
         <employe>
+            <posteOccupe>Graphiste</posteOccupe>
+
             <donneesPersonnelles>
                 <nom>Dupont</nom>
                 <prenom>Jeanne</prenom>

@@ -4,7 +4,8 @@
 <!ELEMENT services (service+)>
 <!ELEMENT equipe (employe+)>
 <!ELEMENT service (#PCDATA)>
-<!ELEMENT employe (donneesPersonnelles, parcoursProfessionnel, formations, competencesLinguistiques, services, competencesTechniques)>
+<!ELEMENT employe (posteOccupe, donneesPersonnelles, parcoursProfessionnel, formations, competencesLinguistiques, services, competencesTechniques)>
+<!ELEMENT posteOccupe (#PCDATA)>
 <!ELEMENT donneesPersonnelles (nom, prenom, dateDeNaissance, adresse)>
 <!ELEMENT prenom (#PCDATA)>
 <!ELEMENT dateDeNaissance (#PCDATA)>

@@ -74,69 +74,75 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Informaticien</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">
-                    Données personnelles
-                  </h6>
-                  <p class="card-text">
-                    Nom : <span>Dupont</span>
-                  </p>
-                  <p class="card-text">
-                    Prénom : <span>Jean</span>
-                  </p>
-                  <p class="card-text">
-                    Age :
-                    <span>
-                      <!--Script to convert birth date to age-->
-                      <script>
-                        var birthDate = new Date("1997-03-24");
-                        var today = new Date();
-                        var age = today.getFullYear() - birthDate.getFullYear();
-                        var m = today.getMonth() - birthDate.getMonth();
-                        if (
-                          m < 0 ||
-                          (m === 0 && today.getDate() < birthDate.getDate())
-                        ) {
-                          age--;
-                        }
-                        document.write(age);
-                      </script>
-                    </span>
-                  </p>
-                  <p class="card-text">
-                    Adresse :
-                    <span>Rue de la Paix</span>
-                    <span>4</span>
-                    <span>1006</span>
-                  </p>
-                  <h6 class="card-subtitle mb-2 text-muted">
-                    Parcours professionnel
-                  </h6>
-                  <p class="card-text">
-                    Expérience : <span>3</span>
-                  </p>
-                  <h6 class="card-subtitle mb-2 text-muted">Formation</h6>
-                  <p class="card-text">
-                    École :
-                    <span>Université de Paris</span>
-                  </p>
-                  <p class="card-text">
-                    Diplôme : <span>Bac +5</span>
-                  </p>
-            
-                  <h6 class="card-subtitle mb-2 text-muted">
-                    Compétences linguistiques
-                  </h6>
-                  <p class="card-text">
-                    Capacités : <span>Anglais</span> <span>Avancé</span>
-                  </p>
-                  <h6 class="card-subtitle mb-2 text-muted">Services</h6>
-                  <p class="card-text">Développement, Maintenance</p>
-                  <h6 class="card-subtitle mb-2 text-muted">
-                    Compétences technique
-                  </h6>
-                  <p class="card-text">
-                    <span>Java, C++, Python</span>
-                  </p>
+                  <div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      Données personnelles
+                    </h6>
+                    <p class="card-text">Nom : <span>Dupont</span></p>
+                    <p class="card-text">Prénom : <span>Jean</span></p>
+                    <p class="card-text">
+                      Age :
+                      <span>
+                        <!--Script to convert birth date to age-->
+                        <script>
+                          var birthDate = new Date("1997-03-24");
+                          var today = new Date();
+                          var age =
+                            today.getFullYear() - birthDate.getFullYear();
+                          var m = today.getMonth() - birthDate.getMonth();
+                          if (
+                            m < 0 ||
+                            (m === 0 && today.getDate() < birthDate.getDate())
+                          ) {
+                            age--;
+                          }
+                          document.write(age);
+                        </script>
+                      </span>
+                    </p>
+                    <p class="card-text">
+                      Adresse :
+                      <span>Rue de la Paix</span>
+                      <span>4</span>
+                      <span>1006</span>
+                    </p>
+                  </div>
+
+                  <div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      Parcours professionnel
+                    </h6>
+                    <p class="card-text">Expérience : 3</p>
+                  </div>
+
+                  <div>
+                    <h6 class="card-subtitle mb-2 text-muted">Formation</h6>
+                    <p class="card-text">
+                      École :
+                      <span>Université de Paris, Diplôme : Bac +5</span>
+                    </p>
+                  </div>
+
+                  <div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      Compétences linguistiques
+                    </h6>
+                    <p class="card-text">Capacités : Anglais, Avancé</p>
+                  </div>
+
+                  <div>
+                    <h6 class="card-subtitle mb-2 text-muted">Services</h6>
+                    <p class="card-text">Développement, Maintenance</p>
+                  </div>
+
+                  <div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      Compétences technique
+                    </h6>
+                    <p class="card-text">
+                      <span>Java, C++, Python</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -148,12 +154,8 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
                   <h6 class="card-subtitle mb-2 text-muted">
                     Données personnelles
                   </h6>
-                  <p class="card-text">
-                    Nom : <span>Dupont</span>
-                  </p>
-                  <p class="card-text">
-                    Prénom : <span>Jeanne</span>
-                  </p>
+                  <p class="card-text">Nom : Dupont</p>
+                  <p class="card-text">Prénom : Jeanne</p>
                   <p class="card-text">
                     Age :
                     <!--Script to convert birth date to age-->
@@ -180,24 +182,18 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
                   <h6 class="card-subtitle mb-2 text-muted">
                     Parcours professionnel
                   </h6>
-                  <p class="card-text">
-                    Expérience : <span>3 ans</span>
-                  </p>
+                  <p class="card-text">Expérience : 3 ans</p>
                   <h6 class="card-subtitle mb-2 text-muted">Formation</h6>
                   <p class="card-text">
                     École :
-                    <span >Université de Paris</span>
+                    <span>Université de Paris</span>
                   </p>
-                  <p class="card-text">
-                    Diplôme : <span>Bac +5</span>
-                  </p>
-                  
+                  <p class="card-text">Diplôme : Bac +5</p>
+
                   <h6 class="card-subtitle mb-2 text-muted">
                     Compétences linguistiques
                   </h6>
-                  <p class="card-text">
-                    Capacités : <span >Anglais</span><span>Basique</span>
-                  </p>
+                  <p class="card-text">Capacités : Anglais, Basique</p>
                   <h6 class="card-subtitle mb-2 text-muted">Services</h6>
                   <p class="card-text">Création, Retouche</p>
                   <h6 class="card-subtitle mb-2 text-muted">
