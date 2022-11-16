@@ -1,0 +1,24 @@
+<!ELEMENT entreprise (nom, description, services, equipe)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT services (service+)>
+<!ELEMENT equipe (employe+)>
+<!ELEMENT service (#PCDATA)>
+<!ELEMENT employe (donneesPersonnelles, parcoursProfessionnel, formations, competencesLinguistiques, services, competencesTechniques)>
+<!ELEMENT donneesPersonnelles (nom, prenom, dateDeNaissance, adresse)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT dateDeNaissance (#PCDATA)>
+<!ELEMENT adresse (rue, numero, npa)>
+<!ELEMENT rue (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT npa (#PCDATA)>
+<!ELEMENT parcoursProfessionnel (experienceEnMois)>
+<!ELEMENT experienceEnMois (#PCDATA)>
+<!ELEMENT formations (ecole+)>
+<!ELEMENT ecole (nom, diplome)>
+<!ELEMENT diplome (#PCDATA)>
+<!ELEMENT competencesLinguistiques (langue+)>
+<!ELEMENT langue (nom, niveau)>
+<!ELEMENT niveau (#PCDATA)>
+<!ELEMENT competencesTechniques (competence+)>
+<!ELEMENT competence (#PCDATA)>

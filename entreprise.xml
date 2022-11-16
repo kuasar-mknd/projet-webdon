@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entreprise SYSTEM "entreprise.dtd">
+<entreprise>
+    <nom>CreaSite</nom>
+    <description>Notre entreprise est spécialisée dans la création de site web et d'identité graphique. Nous concevons des sites internet de qualité, adaptés à vos besoins et à votre budget. Nous vous proposons des sites internet clé en main, des sites e-commerce, des sites vitrines, des sites à thème, des sites d'entreprise, des sites de présentation...</description>
+
+    <services>
+        <service>Création de site internet</service>
+        <service>Création d'identité graphique</service>
+        <service>Création de logo</service>
+        <service>Création de carte de visite</service>
+        <service>Création de flyers</service>
+        <service>Création de plaquette</service>
+    </services>
+
+    <equipe>
+        <employe>
+            <donneesPersonnelles>
+                <nom>Dupont</nom>
+                <prenom>Jean</prenom>
+                <dateDeNaissance>24-03-1997</dateDeNaissance>
+                <adresse>
+                    <rue>Rue de la Paix</rue>
+                    <numero>4</numero>
+                    <npa>1006</npa>
+                </adresse>
+            </donneesPersonnelles>
+
+            <parcoursProfessionnel>
+                <experienceEnMois>36</experienceEnMois>
+            </parcoursProfessionnel>
+
+            <formations>
+                <ecole>
+                    <nom>Université de Paris</nom>
+                    <diplome>Bac +5</diplome>
+                </ecole>
+            </formations>
+
+            <competencesLinguistiques>
+                <langue>
+                    <nom>Anglais</nom>
+                    <niveau>Avancé</niveau>
+                </langue>
+            </competencesLinguistiques>
+
+            <services>
+                <service>Développement</service>
+                <service>Maintenance</service>
+            </services>
+
+            <competencesTechniques>
+                <competence>Java</competence>
+                <competence>C++</competence>
+                <competence>Python</competence>
+            </competencesTechniques>
+
+        </employe>
+
+        <employe>
+            <donneesPersonnelles>
+                <nom>Dupont</nom>
+                <prenom>Jeanne</prenom>
+                <dateDeNaissance>08-10-1996</dateDeNaissance>
+                <adresse>
+                    <rue>Rue de la Paix</rue>
+                    <numero>4</numero>
+                    <npa>1006</npa>
+                </adresse>
+            </donneesPersonnelles>
+
+            <parcoursProfessionnel>
+                <experienceEnMois>36</experienceEnMois>
+            </parcoursProfessionnel>
+
+            <formations>
+                <ecole>
+                    <nom>Université de Paris</nom>
+                    <diplome>Bac +5</diplome>
+                </ecole>
+            </formations>
+
+            <competencesLinguistiques>
+                <langue>
+                    <nom>Anglais</nom>
+                    <niveau>Basique</niveau>
+                </langue>
+            </competencesLinguistiques>
+
+            <services>
+                <service>Création</service>
+                <service>Retouche</service>
+            </services>
+
+            <competencesTechniques>
+                <competence>Photoshop</competence>
+                <competence>Illustrator</competence>
+                <competence>Indesign</competence>
+            </competencesTechniques>
+        </employe>
+    </equipe>
+</entreprise>
