@@ -25,7 +25,7 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-            <h1 class="text-center">CreaSite</h1>
+          <h1 class="text-center">CreaSite</h1>
         </div>
       </div>
       <div class="row">
@@ -45,25 +45,24 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
           </p>
         </div>
       </div>
-        <div class="row">
-            <div class="col-12">
-            <h2>Nos services</h2>
-            </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Nos services</h2>
         </div>
-        <div class="row">
-            <div class="col-12">
-            <ul>
-                <li>Création de site internet</li>
-                <li>Création d'identité graphique</li>
-                <li>Création de logo</li>
-                <li>Création de carte de visite</li>
-                <li>Création de flyers</li>
-                <li>Création de plaquette</li>
-            </ul>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <li>Création de site internet</li>
+            <li>Création d'identité graphique</li>
+            <li>Création de logo</li>
+            <li>Création de carte de visite</li>
+            <li>Création de flyers</li>
+            <li>Création de plaquette</li>
+          </ul>
         </div>
+      </div>
 
-      
       <div class="row">
         <div class="col-12">
           <h2>Notre équipe</h2>
@@ -85,14 +84,18 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
                     Prénom : <span property="foaf:givenName">Dupont</span>
                   </p>
                   <p class="card-text">
-                    Age : <span property="foaf:age">
+                    Age :
+                    <span property="foaf:age">
                       <!--Script to convert birth date to age-->
                       <script>
                         var birthDate = new Date("1997-03-24");
                         var today = new Date();
                         var age = today.getFullYear() - birthDate.getFullYear();
                         var m = today.getMonth() - birthDate.getMonth();
-                        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                        if (
+                          m < 0 ||
+                          (m === 0 && today.getDate() < birthDate.getDate())
+                        ) {
                           age--;
                         }
                         document.write(age);
@@ -126,17 +129,13 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
                     Capacités : <span property="foaf:capacity">Anglais</span>
                   </p>
                   <h6 class="card-subtitle mb-2 text-muted">Services</h6>
+                  <p class="card-text">Développement, Maintenance</p>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Compétences technique
+                  </h6>
                   <p class="card-text">
-                    Services :
-                    <span property="foaf:service"
-                      >Développement, Maintenance</span
-                    >
-                  </p>
-                  <p class="card-text">
-                    Compétences technique :
                     <span property="foaf:competence">Java, C++, Python</span>
                   </p>
-                  
                 </div>
               </div>
             </div>
@@ -155,14 +154,17 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
                     Prénom : <span property="foaf:givenName">Dupont</span>
                   </p>
                   <p class="card-text">
-                    Age : 
+                    Age :
                     <!--Script to convert birth date to age-->
                     <script>
                       var birthDate = new Date("1996-10-08");
                       var today = new Date();
                       var age = today.getFullYear() - birthDate.getFullYear();
                       var m = today.getMonth() - birthDate.getMonth();
-                      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                      if (
+                        m < 0 ||
+                        (m === 0 && today.getDate() < birthDate.getDate())
+                      ) {
                         age--;
                       }
                       document.write(age);
@@ -195,17 +197,11 @@ Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qu
                     Capacités : <span property="foaf:capacity">Anglais</span>
                   </p>
                   <h6 class="card-subtitle mb-2 text-muted">Services</h6>
-                  <p class="card-text">
-                    Services :
-                    <span property="foaf:service">Création, Retouche</span>
-                  </p>
-                  <p class="card-text">
-                    Compétences :
-                    <span property="foaf:competence"
-                      >Photoshop, Illustrator, Indesign</span
-                    >
-                  </p>
-                  
+                  <p class="card-text">Création, Retouche</p>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Compétences technique
+                  </h6>
+                  <p class="card-text">Photoshop, Illustrator, Indesign</p>
                 </div>
               </div>
             </div>
