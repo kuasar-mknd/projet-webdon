@@ -22,8 +22,7 @@
                 <prenom>Jean</prenom>
                 <dateDeNaissance>24-03-1997</dateDeNaissance>
                 <adresse>
-                    <rue>Rue de la Paix</rue>
-                    <numero>4</numero>
+                    <rue>Rue de la Paix 4</rue>
                     <npa>1006</npa>
                 </adresse>
             </donneesPersonnelles>
@@ -67,8 +66,7 @@
                 <prenom>Jeanne</prenom>
                 <dateDeNaissance>08-10-1996</dateDeNaissance>
                 <adresse>
-                    <rue>Rue de la Paix</rue>
-                    <numero>4</numero>
+                    <rue>Rue de la Paix 4</rue>
                     <npa>1006</npa>
                 </adresse>
             </donneesPersonnelles>
