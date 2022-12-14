@@ -2,7 +2,7 @@
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
 <!ELEMENT services (service+)>
-<!ELEMENT equipe (employe+)>
+<!ELEMENT departement (employe+)>
 <!ELEMENT service (#PCDATA)>
 <!ELEMENT employe (posteOccupe, donneesPersonnelles, parcoursProfessionnel, formations, competencesLinguistiques, services, competencesTechniques)>
 <!ELEMENT posteOccupe (#PCDATA)>
