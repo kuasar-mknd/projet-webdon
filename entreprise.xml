@@ -13,7 +13,7 @@
         <service>Création de plaquette</service>
     </services>
 
-    <equipe>
+    <departement>
         <employe>
             <posteOccupe>Informaticien</posteOccupe>
 
@@ -102,5 +102,5 @@
                 <competence>Indesign</competence>
             </competencesTechniques>
         </employe>
-    </equipe>
+    </departement>
 </entreprise>
