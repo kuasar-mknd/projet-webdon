@@ -22,6 +22,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEteEffectuePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEteEffectuePar">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEuLExperience"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Experience"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEteSuiviPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEteSuiviPar">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aSuiviLaFormation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Formation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEuLExperience -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEuLExperience">
@@ -36,6 +56,57 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aSuiviLaFormation">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Formation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#contient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#contient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#faitParti"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Entreprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#emploie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#emploie">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#travailPour"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Entreprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estConstitueDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estConstitueDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#travailleDans"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estHabitePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estHabitePar">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#vitA"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Adresse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estParlePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estParlePar">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#parleLe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CompetenceLinguistique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
     </owl:ObjectProperty>
     
 
