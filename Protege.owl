@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#"
+     xml:base="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CreaSite="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEuLExperience -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEuLExperience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Experience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aSuiviLaFormation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aSuiviLaFormation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Formation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#faitParti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#faitParti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Entreprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#parleLe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#parleLe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CompetenceLinguistique"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#travailPour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#travailPour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Entreprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#travailleAvec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#travailleAvec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#travailleDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#travailleDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#vitA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#vitA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Adresse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#NPA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#NPA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Adresse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEtudieA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aEtudieA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Formation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aTravaillerEnTantQue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aTravaillerEnTantQue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aTravaillerPendant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aTravaillerPendant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Experience"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aTravaillerPour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#aTravaillerPour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#dateDeNaissance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#dateDeNaissance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estDiplome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estDiplome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Formation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#niveau -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#niveau">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CompetenceLinguistique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#nom">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#offre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#offre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#prenom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#prenom">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#rue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#rue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Adresse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#saitFaire -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#saitFaire">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Adresse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Adresse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CompetenceLinguistique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CompetenceLinguistique"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Entreprise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Entreprise"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Experience"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Formation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Formation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Personne"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#AnglaisAvance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#AnglaisAvance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CompetenceLinguistique"/>
+        <niveau rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avancé</niveau>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anglais</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#AnglaisBasique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#AnglaisBasique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CompetenceLinguistique"/>
+        <niveau rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basique</niveau>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anglais</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CreaSite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CreaSite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Entreprise"/>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CreaSite</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement"/>
+        <faitParti rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CreaSite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#ExperienceCommuneDeLausanne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#ExperienceCommuneDeLausanne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Experience"/>
+        <aTravaillerEnTantQue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Développeur front-end</aTravaillerEnTantQue>
+        <aTravaillerPendant rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36 mois</aTravaillerPendant>
+        <aTravaillerPour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commune de Lausanne</aTravaillerPour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#ExperienceHugoReitzel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#ExperienceHugoReitzel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Experience"/>
+        <aTravaillerEnTantQue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graphiste</aTravaillerEnTantQue>
+        <aTravaillerPendant rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36 mois</aTravaillerPendant>
+        <aTravaillerPour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hugo Reitzel</aTravaillerPour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#FormationStrategieDuDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#FormationStrategieDuDesign">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Formation"/>
+        <aEtudieA rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Université de Paris</aEtudieA>
+        <estDiplome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bac +5</estDiplome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#FormationUFRInformatique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#FormationUFRInformatique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Formation"/>
+        <aEtudieA rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Universite de Paris</aEtudieA>
+        <estDiplome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bac +5</estDiplome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Graphiste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Graphiste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
+        <aEuLExperience rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#ExperienceHugoReitzel"/>
+        <aSuiviLaFormation rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#FormationStrategieDuDesign"/>
+        <parleLe rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#AnglaisBasique"/>
+        <travailPour rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CreaSite"/>
+        <travailleDans rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement_01"/>
+        <vitA rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#RueDeLaPaix4"/>
+        <dateDeNaissance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1996-10-08</dateDeNaissance>
+        <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dupont</nom>
+        <offre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Création</offre>
+        <offre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retouche</offre>
+        <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeanne</prenom>
+        <saitFaire rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Illustrator</saitFaire>
+        <saitFaire rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InDesign</saitFaire>
+        <saitFaire rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photoshop</saitFaire>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Informaticien -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Informaticien">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
+        <aEuLExperience rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#ExperienceCommuneDeLausanne"/>
+        <aSuiviLaFormation rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#FormationUFRInformatique"/>
+        <parleLe rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#AnglaisAvance"/>
+        <travailPour rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CreaSite"/>
+        <travailleAvec rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Graphiste"/>
+        <travailleDans rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Departement_01"/>
+        <vitA rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#RueDeLaPaix4"/>
+        <dateDeNaissance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1997-03-24</dateDeNaissance>
+        <nom>Dupont</nom>
+        <offre>Développement</offre>
+        <offre>Maintenance</offre>
+        <prenom>Jean</prenom>
+        <saitFaire>C++</saitFaire>
+        <saitFaire>Java</saitFaire>
+        <saitFaire>Python</saitFaire>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#RueDeLaPaix4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#RueDeLaPaix4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Adresse"/>
+        <NPA rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1066</NPA>
+        <rue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rue de la paix 4</rue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#AnglaisAvance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#AnglaisBasique"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#ExperienceCommuneDeLausanne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#ExperienceHugoReitzel"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#FormationStrategieDuDesign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#FormationUFRInformatique"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Graphiste"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Informaticien"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
