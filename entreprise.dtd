@@ -1,25 +1,22 @@
-<!ELEMENT entreprise (nom, description, services, equipe)>
+<!ELEMENT entreprise (nom, description, offre+, departement+)>
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
-<!ELEMENT services (service+)>
 <!ELEMENT departement (employe+)>
-<!ELEMENT service (#PCDATA)>
-<!ELEMENT employe (posteOccupe, donneesPersonnelles, parcoursProfessionnel, formations, competencesLinguistiques, services, competencesTechniques)>
+<!ELEMENT offre (#PCDATA)>
+<!ELEMENT saitFaire (#PCDATA)>
+<!ELEMENT employe (posteOccupe, nom, prenom, dateDeNaissance, vitA, aEuLExperience+, aSuiviLaFormation+, parleLe+, offre+, saitFaire+)>
 <!ELEMENT posteOccupe (#PCDATA)>
-<!ELEMENT donneesPersonnelles (nom, prenom, dateDeNaissance, adresse)>
 <!ELEMENT prenom (#PCDATA)>
 <!ELEMENT dateDeNaissance (#PCDATA)>
-<!ELEMENT adresse (rue, numero, npa)>
+<!ELEMENT vitA (rue, npa)>
 <!ELEMENT rue (#PCDATA)>
-<!ELEMENT numero (#PCDATA)>
 <!ELEMENT npa (#PCDATA)>
-<!ELEMENT parcoursProfessionnel (experienceEnMois)>
-<!ELEMENT experienceEnMois (#PCDATA)>
-<!ELEMENT formations (ecole+)>
-<!ELEMENT ecole (nom, diplome)>
-<!ELEMENT diplome (#PCDATA)>
-<!ELEMENT competencesLinguistiques (langue+)>
-<!ELEMENT langue (nom, niveau)>
+<!ELEMENT aEuLExperience (aTravaillerPour, aTravaillerEnTantQue, aTravaillerPendant)>
+<!ELEMENT aTravaillerPour (#PCDATA)>
+<!ELEMENT aTravaillerEnTantQue (#PCDATA)>
+<!ELEMENT aTravaillerPendant (#PCDATA)>
+<!ELEMENT aSuiviLaFormation (aEtudierA, estDiplome)>
+<!ELEMENT aEtudierA (#PCDATA)>
+<!ELEMENT estDiplome (#PCDATA)>
+<!ELEMENT parleLe (nom, niveau)>
 <!ELEMENT niveau (#PCDATA)>
-<!ELEMENT competencesTechniques (competence+)>
-<!ELEMENT competence (#PCDATA)>

@@ -230,6 +230,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Entreprise"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estDiplome -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#estDiplome">
@@ -261,6 +270,14 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#offre">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#posteOccupe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#posteOccupe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Employe"/>
     </owl:DatatypeProperty>
     
 
@@ -387,7 +404,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#CreaSite">
         <rdf:type rdf:resource="http://www.semanticweb.org/dmendesg/ontologies/2022/11/CreaSite#Entreprise"/>
+        <description>Notre entreprise est spécialisée dans la création de site web et d&apos;identité graphique. Nous concevons des sites internet de qualité, adaptés à vos besoins et à votre budget. Nous vous proposons des sites internet clé en main, des sites e-commerce, des sites vitrines, des sites à thème, des sites d&apos;entreprise, des sites de présentation...</description>
         <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CreaSite</nom>
+        <offre>Création d&apos;identité graphique</offre>
+        <offre>Création de carte de visite</offre>
+        <offre>Création de flyers</offre>
+        <offre>Création de logo</offre>
+        <offre>Création de plaquette</offre>
+        <offre>Création de site internet</offre>
     </owl:NamedIndividual>
     
 
@@ -457,6 +481,7 @@
         <nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dupont</nom>
         <offre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Création</offre>
         <offre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retouche</offre>
+        <posteOccupe>Graphiste</posteOccupe>
         <prenom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeanne</prenom>
         <saitFaire rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Illustrator</saitFaire>
         <saitFaire rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InDesign</saitFaire>
@@ -480,6 +505,7 @@
         <nom>Dupont</nom>
         <offre>Développement</offre>
         <offre>Maintenance</offre>
+        <posteOccupe>Informaticien</posteOccupe>
         <prenom>Jean</prenom>
         <saitFaire>C++</saitFaire>
         <saitFaire>Java</saitFaire>
