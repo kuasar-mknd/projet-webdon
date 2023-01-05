@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entreprise SYSTEM "entreprise.dtd">
+<entreprise>
+    <nom>CreaSite</nom>
+    <description>Notre entreprise est spécialisée dans la création de site web et d'identité graphique. Nous concevons des sites internet de qualité, adaptés à vos besoins et à votre budget. Nous vous proposons des sites internet clé en main, des sites e-commerce, des sites vitrines, des sites à thème, des sites d'entreprise, des sites de présentation...</description>
+
+    <offre>Création de site internet</offre>
+    <offre>Création d'identité graphique</offre>
+    <offre>Création de logo</offre>
+    <offre>Création de carte de visite</offre>
+    <offre>Création de flyers</offre>
+    <offre>Création de plaquette</offre>
+
+    <departement>
+        <employe>
+            <posteOccupe>Informaticien</posteOccupe>
+            <nom>Dupont</nom>
+            <prenom>Jean</prenom>
+            <dateDeNaissance>24-03-1997</dateDeNaissance>
+            <vitA>
+                <rue>Rue de la Paix 4</rue>
+                <npa>1006</npa>
+            </vitA>
+
+            <aEuLExperience>
+                <aTravaillerPour>La Commune de Lausanne</aTravaillerPour>
+                <aTravaillerEnTantQue>Développeur front</aTravaillerEnTantQue>
+                <aTravaillerPendant>36 mois</aTravaillerPendant>
+            </aEuLExperience>
+
+            <aSuiviLaFormation>
+                <aEtudierA>Université de Paris</aEtudierA>
+                <estDiplome>Bac +5</estDiplome>
+            </aSuiviLaFormation>
+
+            <parleLe>
+                <nom>Anglais</nom>
+                <niveau>Avancé</niveau>
+            </parleLe>
+            
+            <offre>Développement</offre>
+            <offre>Maintenance</offre>
+        
+            <saitFaire>Java</saitFaire>
+            <saitFaire>C++</saitFaire>
+            <saitFaire>Python</saitFaire>
+        </employe>
+
+        <employe>
+            <posteOccupe>Graphiste</posteOccupe>
+            <nom>Dupont</nom>
+            <prenom>Jeanne</prenom>
+            <dateDeNaissance>08-10-1996</dateDeNaissance>
+            <vitA>
+                <rue>Rue de la Paix 4</rue>
+                <npa>1006</npa>
+            </vitA>
+
+            <aEuLExperience>
+                <aTravaillerPour>Hugo Reitzel</aTravaillerPour>
+                <aTravaillerEnTantQue>Graphiste</aTravaillerEnTantQue>
+                <aTravaillerPendant>36 mois</aTravaillerPendant>
+            </aEuLExperience>
+
+            <aSuiviLaFormation>
+                <aEtudierA>Université de Paris</aEtudierA>
+                <estDiplome>Bac +5</estDiplome>
+            </aSuiviLaFormation>
+
+            <parleLe>
+                <nom>Anglais</nom>
+                <niveau>Basique</niveau>
+            </parleLe>
+        
+            <offre>Création</offre>
+            <offre>Retouche</offre>
+        
+            <saitFaire>Photoshop</saitFaire>
+            <saitFaire>Illustrator</saitFaire>
+            <saitFaire>Indesign</saitFaire>
+        </employe>
+    </departement>
+</entreprise>

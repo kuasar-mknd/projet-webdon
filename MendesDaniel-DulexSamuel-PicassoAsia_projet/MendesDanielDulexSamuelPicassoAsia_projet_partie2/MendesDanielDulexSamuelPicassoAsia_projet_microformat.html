@@ -1,0 +1,212 @@
+<!--Travail pour le projet
+Vous allez prochainement ouvrir votre startup. Vous avez entendu parler des ontologies et du web des données et vous souhaitez vous y lancer.
+Vous décidez tout d’abord de mettre sur pied un site web présentant votre entreprise. 
+Les points essentiels devant figurer sur votre page sont les suivants : vos données personnelles (nom, adresse, âge), votre parcours professionnel (expérience), votre formation (diplômes, écoles), vos compétences linguistiques (capacités) et les services que vous offrez au sein de votre entreprise.
+Il s’agit d’un cas fictif vous pouvez bien entendu simuler les données que vous allez mettre à disposition.
+Il vous est demandé de réaliser un modèle DTD et un schéma graphique RDFS qui reprennent les éléments figurant dans votre site web. Le schéma RDFS devra être reproduit (et complété si nécessaire) à l’aide du logiciel protégé (n’oubliez pas d’enrichir votre modèle par les « individuals » /instances).-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet WebDon</title>
+    <!--Link bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!--Link CSS-->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">CreaSite</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Présentation</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    Notre entreprise est spécialisée dans la création de site web et d'identité graphique. Nous concevons des sites internet de qualité, adaptés à vos besoins et à votre budget. Nous vous proposons des sites internet clé en main, des sites e-commerce, des
+                    sites vitrines, des sites à thème, des sites d'entreprise, des sites de présentation...
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Nos services</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul>
+                    <li>Création de site internet</li>
+                    <li>Création d'identité graphique</li>
+                    <li>Création de logo</li>
+                    <li>Création de carte de visite</li>
+                    <li>Création de flyers</li>
+                    <li>Création de plaquette</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2>Notre équipe</h2>
+            </div>
+            <!-- Employé 1 : Informaticien -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Informaticien</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    Données personnelles
+                                </h6>
+                                <div class="vcard">
+                                    <p class="fn"><span>Dupont</span> <span>Jean</span></p>
+                                    <p class="bday">1997-03-24</p>
+                                    <div class="adr">
+                                        <p class="street-address">Rue de la Paix 4</p>
+                                        <p class="postal-code">1006</p>
+                                    </div>
+                                </div>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    Parcours professionnel
+                                </h6>
+                                <p class="card-text">
+                                    Expérience :
+                                    <span>
+                                        <span>Commune de Lausanne</span>
+                                    <span>Développeur Front</span>
+
+                                    <span>Janvier 2019</span>
+                                    <span>Décembre 2021</span>
+                                    </span>
+                                </p>
+                                <h6 class="card-subtitle mb-2 text-muted">Formation</h6>
+                                <p class="card-text">
+                                    École :
+                                    <span>
+                                      <span>Université de Paris</span>
+                                    </span>
+                                </p>
+                                <p class="card-text">
+                                    Diplôme : <span>
+                                      <span>Bac +5</span>
+                                    </span>
+                                </p>
+
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    Compétences linguistiques
+                                </h6>
+                                <p class="card-text">
+                                    Capacités :
+                                    <span>Anglais</span>
+                                    <span>Avancé</span>
+                                </p>
+                                <h6 class="card-subtitle mb-2 text-muted">Services</h6>
+                                <p class="card-text">
+                                    <span>Développement</span>
+                                    <span>Maintenance</span>
+                                </p>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    Compétences technique
+                                </h6>
+                                <p class="card-text">
+                                    <span>Python</span>,
+                                    <span>C++</span>,
+                                    <span>Java</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Employé 2 : Graphiste -->
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Graphiste</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    Données personnelles
+                                </h6>
+                                <p class="card-text">
+                                    Nom : <span>Dupont</span>
+                                </p>
+                                <p class="card-text">
+                                    Prénom : <span>Jeanne</span>
+                                </p>
+                                <p class="card-text">
+                                    Age :
+                                    <span>1996-10-08</span>
+                                </p>
+                                <p class="card-text">
+                                    Adresse :
+                                    <span>Rue de la Paix 4</span>
+                                    <span>1006</span>
+                                </p>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    Parcours professionnel
+                                </h6>
+                                <p class="card-text">
+                                    Expérience :
+                                    <span>
+                                    <span>Hugo Reitzel</span>
+                                    <span>Graphiste</span>
+                                    <span>Janvier 2019</span>
+                                    <span>Décembre 2021</span>
+                                    </span>
+                                </p>
+                                <h6 class="card-subtitle mb-2 text-muted">Formation</h6>
+                                <p class="card-text">
+                                    École :
+                                    <span>
+                                      <span>Université de Paris</span>
+                                    </span>
+                                </p>
+                                <p class="card-text">
+                                    Diplôme : <span>
+                                        <span>Bac +5</span>
+                                    </span>
+                                </p>
+
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    Compétences linguistiques
+                                </h6>
+                                <p class="card-text">
+                                    Capacités :
+                                    <span>Anglais</span>
+                                    <span>Basique</span>
+                                </p>
+                                <h6 class="card-subtitle mb-2 text-muted">Services</h6>
+                                <p class="card-text">
+                                    <span>Création</span>
+                                    <span>Retouche</span>
+                                </p>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    Compétences technique
+                                </h6>
+                                <p class="card-text">
+                                    <span>Photoshop</span>,
+                                    <span>Illustrator</span>,
+                                    <span>Indesign</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Link JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

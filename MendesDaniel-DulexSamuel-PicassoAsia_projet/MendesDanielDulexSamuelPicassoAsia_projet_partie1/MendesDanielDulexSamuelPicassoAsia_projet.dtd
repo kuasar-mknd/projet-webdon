@@ -1,0 +1,22 @@
+<!ELEMENT entreprise (nom, description, offre+, departement+)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT departement (employe+)>
+<!ELEMENT offre (#PCDATA)>
+<!ELEMENT saitFaire (#PCDATA)>
+<!ELEMENT employe (posteOccupe, nom, prenom, dateDeNaissance, vitA, aEuLExperience+, aSuiviLaFormation+, parleLe+, offre+, saitFaire+)>
+<!ELEMENT posteOccupe (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT dateDeNaissance (#PCDATA)>
+<!ELEMENT vitA (rue, npa)>
+<!ELEMENT rue (#PCDATA)>
+<!ELEMENT npa (#PCDATA)>
+<!ELEMENT aEuLExperience (aTravaillerPour, aTravaillerEnTantQue, aTravaillerPendant)>
+<!ELEMENT aTravaillerPour (#PCDATA)>
+<!ELEMENT aTravaillerEnTantQue (#PCDATA)>
+<!ELEMENT aTravaillerPendant (#PCDATA)>
+<!ELEMENT aSuiviLaFormation (aEtudierA, estDiplome)>
+<!ELEMENT aEtudierA (#PCDATA)>
+<!ELEMENT estDiplome (#PCDATA)>
+<!ELEMENT parleLe (nom, niveau)>
+<!ELEMENT niveau (#PCDATA)>
